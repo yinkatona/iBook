@@ -28,10 +28,10 @@ class SignUpFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.getStartedBtn.setOnClickListener{
-            navCon.navigate(R.id.action_signUpFragment_to_proceedSplashScreenFragment)
+            navCon.navigate(R.id.action_signInFragment_to_proceedSplashScreenFragment)
         }
        binding.getStartedBtn.setOnClickListener{
-           navCon.navigate(R.id.action_signUpFragment_to_signInFragment)
+           navCon.navigate(R.id.action_signUpFragment_to_proceedSplashScreenFragment)
        }
     }
 

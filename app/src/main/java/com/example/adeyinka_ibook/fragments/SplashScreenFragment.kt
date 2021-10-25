@@ -1,5 +1,6 @@
 package com.example.adeyinka_ibook.fragments
 
+import android.annotation.SuppressLint
 import android.app.ActionBar
 import android.os.Bundle
 import android.os.Handler
@@ -12,6 +13,7 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.adeyinka_ibook.R
 import com.example.adeyinka_ibook.databinding.FragmentSplashScreenBinding
 
+@SuppressLint("CustomSplashFragment")
 class SplashScreenFragment : Fragment() {
 
     private var _binding: FragmentSplashScreenBinding? = null
@@ -36,7 +38,5 @@ class SplashScreenFragment : Fragment() {
 
             },1800)
     }
-
-
 
 }

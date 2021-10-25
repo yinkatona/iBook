@@ -22,18 +22,14 @@ class SignInFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
        _binding = FragmentSignInBinding.inflate(inflater, container, false)
-        navCon = androidx.navigation.fragment.NavHostFragment.findNavController(this)
+        navCon = NavHostFragment.findNavController(this)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.signInBtn.setOnClickListener{
-            navCon.navigate(com.example.adeyinka_ibook.R.id.action_signInFragment_to_proceedSplashScreenFragment)
+            navCon.navigate(R.id.action_signInFragment_to_proceedSplashScreenFragment)
         }
-        binding.signUpOption.setOnClickListener{
-            navCon.navigate(R.id.action_signInFragment_to_signUpFragment)
-        }
-
     }
 
 }

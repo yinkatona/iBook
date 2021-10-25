@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_onBoardingFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashScreenFragment"
@@ -29,12 +32,6 @@
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
-            android:id="@+id/action_signUpFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
-        <action
-            android:id="@+id/action_signUpFragment_to_signInFragment2"
-            app:destination="@id/signInFragment" />
-        <action
             android:id="@+id/action_signUpFragment_to_proceedSplashScreenFragment"
             app:destination="@id/proceedSplashScreenFragment" />
     </fragment>
@@ -46,9 +43,6 @@
         <action
             android:id="@+id/action_signInFragment_to_proceedSplashScreenFragment"
             app:destination="@id/proceedSplashScreenFragment" />
-        <action
-            android:id="@+id/action_signInFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment" />
     </fragment>
     <fragment
         android:id="@+id/proceedSplashScreenFragment"
